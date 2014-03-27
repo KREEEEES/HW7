@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="gridview.aspx.vb" Inherits="gridview" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="players.aspx.vb" Inherits="gridview" %>
 
 <!DOCTYPE html>
 
@@ -33,12 +33,9 @@
         <br />
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="plID" DataSourceID="playerDataSource" Width="564px" AllowSorting="True">
             <Columns>
-                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                 <asp:BoundField DataField="plName" HeaderText="Player Name" SortExpression="plName" />
                 <asp:BoundField DataField="plCollege" HeaderText="College" SortExpression="plCollege" />
-                <asp:BoundField DataField="plTeam" HeaderText="Current Team" SortExpression="plTeam" />
-                <asp:BoundField DataField="plPosistion" HeaderText="Position" SortExpression="plPosistion" />
-                <asp:BoundField DataField="plPPG" HeaderText="Season PPG" SortExpression="plPPG" />
+                <asp:HyperLinkField DataNavigateUrlFields="plID" DataNavigateUrlFormatString="playerdetail.aspx?plID={0}" Text="View Details" />
             </Columns>
         </asp:GridView>
     
