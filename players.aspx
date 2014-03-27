@@ -31,6 +31,9 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <br />
+        <a href="default.aspx"> Home </a>
+        <br />
+        <a href="newplayer.aspx"> Add New Player </a>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="plID" DataSourceID="playerDataSource" Width="564px" AllowSorting="True">
             <Columns>
                 <asp:BoundField DataField="plName" HeaderText="Player Name" SortExpression="plName" />
