@@ -4,12 +4,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title> player details </title>
 </head>
 <body>
     <form id="form1" runat="server">
     <div>
-    
+    <h1>Player Detail</h1>
+
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:cs_Players %>" DeleteCommand="DELETE FROM [Players] WHERE [plID] = @plID" InsertCommand="INSERT INTO [Players] ([plName], [plCollege], [plTeam], [plPosistion], [plPPG]) VALUES (@plName, @plCollege, @plTeam, @plPosistion, @plPPG)" SelectCommand="SELECT * FROM [Players] WHERE ([plID] = @plID)" UpdateCommand="UPDATE [Players] SET [plName] = @plName, [plCollege] = @plCollege, [plTeam] = @plTeam, [plPosistion] = @plPosistion, [plPPG] = @plPPG WHERE [plID] = @plID">
             <DeleteParameters>
                 <asp:Parameter Name="plID" Type="Int32" />
@@ -36,10 +37,8 @@
         <br />
         <br />
         <a href="Default.aspx"> Go Home</a>
-        <br />
-        <a href="newplayer.aspx"> Add a New Player </a>
-        <br />
-        <a href="players.aspx"> View All Players </a>
+        &nbsp<a href="newplayer.aspx"> Add a New Player </a>
+        &nbsp<a href="players.aspx"> View All Players </a>
         <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="plID" DataSourceID="SqlDataSource1" Height="50px" Width="309px">
             <Fields>
                 <asp:BoundField DataField="plName" HeaderText="Player Name" SortExpression="plName" />
