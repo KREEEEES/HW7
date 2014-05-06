@@ -1,36 +1,34 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="_Default" %>
+﻿   <%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_default" %>
 
-<!DOCTYPE html>
+    <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+   
+    </asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title> Home Page </title>
+ <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-    <link rel="stylesheet" type="text/css" href="StyleSheet.css"
-</head>
-     
-<body>
-    <form id="form1" runat="server">
-    <div>
+     <h3> Kevin Durants adds a regular season MVP title to the trophy case. </h3>
 
-       <h1> Welcome to My Database </h1> 
+     <br />
 
-        
-        <div id="Navi">
-        &nbsp<a href="Default.aspx"> Home </a>
-        &nbsp<a href="players.aspx"> View All Players </a>
-        &nbsp<a href="newplayer.aspx"> Add a New Player </a>
-        &nbsp<a href="contact.aspx"> Contact</a>
-       
-            
-            
-             </div>
-     
+     <div id="kd"><img src="./Images/kdmvp.jpg" alt="kd" title="kd" height="250px" width="275" /></div>
 
-        <img alt="NBA logo" title="NBA logo" src=" ./images/nba.jpg" />
-        <br />
-        
-    </div>
-    </form>
-</body>
-</html>
+     <br />
+
+     <div id="kdmvp">
+
+         <p>
+
+             After a tight race with Lebron James for the 2013-2014 season, KD had won the MVP title by recieving 119 of the 125 first place votes.
+
+
+         </p>
+
+
+
+
+
+
+         </div>
+
+
+     </asp:Content>
