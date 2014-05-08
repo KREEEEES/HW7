@@ -1,19 +1,15 @@
-﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="search.aspx.vb" Inherits="search" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="search1.aspx.vb" Inherits="Default2" %>
 
-<!DOCTYPE html>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
+    <div id="seach box">
     
         <asp:SqlDataSource ID="PlayerDate" runat="server" ConnectionString="<%$ ConnectionStrings:cs_Players %>" SelectCommand="SELECT * FROM [Players]"></asp:SqlDataSource>
         <br />
         <br />
-        Search For a Player by Name<asp:TextBox ID="tbPlayer" runat="server"></asp:TextBox>
+        Search For a Player by Name <asp:TextBox ID="tbPlayer" runat="server"></asp:TextBox>
         <br />
     
     </div>
@@ -27,6 +23,6 @@
             </Columns>
         </asp:GridView>
         <br />
-    </form>
-</body>
-</html>
+ 
+</asp:Content>
+
