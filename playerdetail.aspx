@@ -34,9 +34,7 @@
         </asp:SqlDataSource>
         <br />
         <br />
-        <a href="Default.aspx"> Go Home</a>
-        &nbsp<a href="newplayer.aspx"> Add a New Player </a>
-        &nbsp<a href="players.aspx"> View All Players </a>
+      
         <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="plID" DataSourceID="SqlDataSource1" Height="50px" Width="309px">
             <Fields>
                 <asp:BoundField DataField="plName" HeaderText="Player Name" SortExpression="plName" />

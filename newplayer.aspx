@@ -1,4 +1,4 @@
-﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.Master" AutoEventWireup="false" CodeFile="playerdetail.aspx.vb" Inherits="detailsview" %>
+﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.Master" AutoEventWireup="false" CodeFile="newplayer.aspx.vb" Inherits="detailsview" %>
  
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
@@ -31,9 +31,7 @@
         </asp:SqlDataSource>
         <br />
         <br />
-        <a href="Default.aspx"> Go Home </a>
-        <br />
-        <a href="players.aspx"> View All Players </a>
+      
         <asp:DetailsView ID="DetailsView1" runat="server" AllowPaging="True" AutoGenerateRows="False" DataKeyNames="plID" DataSourceID="SqlDataSource1" Height="50px" Width="313px" DefaultMode="Insert">
             <Fields>
                 <asp:BoundField DataField="plName" HeaderText="Player Name" SortExpression="plName" />
