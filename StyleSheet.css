@@ -1,18 +1,149 @@
-﻿
-h1 {
-    text-align: center;
-}
-h2 {
-    text-align: center;
-}
-#nba {
-    float: left;
+﻿#container {
+    background: white;
+    height: auto;
+    width: 1240px;
+    margin: auto;
 }
 
-#nba2 {
+#header {
+    background: white;
+    color: Blue;
+    border: 5px solid orange;
+    padding: 5px;
+}
+
+
+
+#main {
+    background: white;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 1000px;
+    height: 600px;
     float: right;
+    border-right: 5px solid orange;
+    border-left: 5px solid orange;
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+#left_sidebar {
+    background: white;
+    height: 625px;
+    width: 145px; 
+    float: left;
+   border-left:5px solid orange; 
+}
+
+#footer {
+    background: orange;
+    color: white;
+    clear:both;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-size: 16pt;
+    
+}
+
+#menu {
+    background: orange;
+    color: blue;
+    padding-left: 10px;
+    border: 1px solid orange;
+    text-align: center;
 }
 
 #Menu1 { padding-left: 5px;
          padding-top: 5px;
+}
+
+
+
+
+/* Headers Formatting*/
+
+h1 { text-align: center;
+     font-size: 38pt;
+     color: blue;
+}
+
+h2 { text-align: center;
+     font-size: 26pt;
+}
+
+
+h3 { text-align: center;
+     font-size: 22pt;
+     padding-top: 10px;
+     padding-left: 10px;
+     color:blue;
+}
+
+h4 { text-align: center;
+     color: orange;
+}
+
+
+
+
+
+
+
+
+
+#kdmvp { text-align: left;
+              padding-left: 10px;
+} 
+
+#nba { float: left;
+
+
+}
+
+#nba2 { float: right;
+}
+
+#kd { text-align: center;
+       
+}
+
+#Login { text-align: center;
+}
+
+#Login1 { border: 5pt orange;
+}
+/* Start Contacts Page*/
+
+#contact { text-align: center;
+}
+
+/* End Contacts Page */
+
+/* Start About Us Page*/
+
+#aboutus { text-align: center;
+           padding-right: 20px;
+           padding-left: 20px;
+}
+
+
+
+.level1 { color: orange;
+          background-color: white;
+          font-variant: small-caps;
+          font-size: large;
+          font-weight: bold;
+}
+
+
+
+
+#backbutton { text-align: center;
+}
+
+#viewplayers {
+    padding-left: 200px;
 }

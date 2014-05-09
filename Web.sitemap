@@ -1,23 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
-  <siteMapNode url="" title="."  description="">
-       
-       <siteMapNode url="~/default.aspx" title="Home"  description="" />
-
-      <siteMapNode url="~/search.aspx" title="Search Players"  description="" />
-
-      <siteMapNode url="~/players1.aspx" title="View Players"  description="" />
-
-      <siteMapNode url="~/contact1.aspx" title="Contact Us"  description="" />
-
-
-    </siteMapNode>
-
-  </siteMap>
-    
-    
-    
-    
-    
-    
-
+    <siteMapNode url="" title=""  description="">
+        <siteMapNode url="" title=""  description="" />
+        <siteMapNode url="" title=""  description="" />
+      <siteMapNode url ="default.aspx" title="Home" description="" />
+      <siteMapNode url="players1.aspx" title="View Players" description=""/>
+      <siteMapNode url ="search3.aspx" title="Search Players" description="" />
+      <siteMapNode url ="contact1.aspx" title="Contact Us" description="" />
+      <siteMapNode url ="aboutus.aspx" title="About Us" description="" />
+      <siteMapNode url="admin.aspx" title="Admin" description="" />
+      <siteMapNode url="editdelete.aspx" title ="Edit/Delete" description="" />
+      <siteMapNode url ="newplayer.aspx" title="Add Player" description="" />
+     </siteMapNode>
+  
+</siteMap>

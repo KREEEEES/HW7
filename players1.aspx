@@ -3,8 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-        
-    <div>
+            <link rel="stylesheet" type="text/css" href="StyleSheet2.css" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+
+    <h1>View Players</h1>
+    <div id="viewplayers">
     
         <asp:SqlDataSource ID="playerDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:cs_Players %>" SelectCommand="SELECT * FROM [Players]" DeleteCommand="DELETE FROM [Players] WHERE [plID] = @plID" InsertCommand="INSERT INTO [Players] ([plName], [plCollege], [plTeam], [plPosistion], [plPPG]) VALUES (@plName, @plCollege, @plTeam, @plPosistion, @plPPG)" UpdateCommand="UPDATE [Players] SET [plName] = @plName, [plCollege] = @plCollege, [plTeam] = @plTeam, [plPosistion] = @plPosistion, [plPPG] = @plPPG WHERE [plID] = @plID">
             <DeleteParameters>
@@ -26,16 +29,18 @@
                 <asp:Parameter Name="plID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-       
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="plID" DataSourceID="playerDataSource" Width="564px" AllowSorting="True">
+        
+       <div id="DeatailsView1">
+        <asp:GridView ID="GridView1" runat="server" CssClass="grid-view" AutoGenerateColumns="False" DataKeyNames="plID" DataSourceID="playerDataSource" Width="564px" AllowSorting="True" AllowPaging="True">
             <Columns>
                 <asp:BoundField DataField="plName" HeaderText="Player Name" SortExpression="plName" />
                 <asp:BoundField DataField="plCollege" HeaderText="College" SortExpression="plCollege" />
                 <asp:HyperLinkField DataNavigateUrlFields="plID" DataNavigateUrlFormatString="playerdetail.aspx?plID={0}" Text="View Details" />
             </Columns>
         </asp:GridView>
-    
+           </div>
     </div>
+   
         </asp:Content>
  
 

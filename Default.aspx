@@ -10,7 +10,7 @@
 
      <br />
 
-     <div id="kd"><img src="./Images/kdmvp.jpg" alt="kd" title="kd" height="250px" width="275" /></div>
+     <div id="kd"><img src="./Images/kdmvp.jpg" alt="kd" title="kd" height="250px" style="width: 398px" /></div>
 
      <br />
 
@@ -18,7 +18,8 @@
 
          <p>
 
-             After a tight race with Lebron James for the 2013-2014 season, KD had won the MVP title by recieving 119 of the 125 first place votes.
+             After a tight race with Lebron James for the 2013-2014 season, KD had won the MVP title by recieving 119 of the 125 first place votes. His acceptance touched the hearts of many, and
+             showed that how truely humble and honored is to win this award.
 
 
          </p>

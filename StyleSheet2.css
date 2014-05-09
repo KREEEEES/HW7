@@ -1,0 +1,45 @@
+﻿
+body {
+}
+
+.grid-view {    background-color: orange;
+                    width: auto;    
+                    margin: 5px 0 10px 0;    
+                    border: solid 2px blue;    
+                    border-collapse: collapse;    
+                    text-align: center;    
+                    color: orange;
+}
+
+.grid-view .row { background-color: white;    
+}
+
+.grid-view .alternate { background-color: blue;    
+}    
+
+.grid-view td {padding: 10px;        
+               border: solid 2px blue;        
+               color: white;    
+}    
+
+.grid-view th {padding: 10px;        
+               color: blue;        
+               border-left: solid 2px blue;
+}
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+#DetailsView1 { margin-left: auto;   
+                margin-right: auto;
+}
+
+#addplayer {
+    padding-left: 300px;
+}
+
+#details {
+    padding-left: 325px;
+}
+
+#search {
+    padding-left: 250px;
+}
