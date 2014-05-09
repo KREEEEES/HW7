@@ -3,12 +3,12 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
     <div id="aboutus">
 
     <h2> About Us </h2>
 
-    <p> 
+    <p> This website was designed to give people a simple and easy to use interface to look up their favorite athletes.
     </p>
 
         <br />

@@ -8,9 +8,9 @@
       <siteMapNode url ="search3.aspx" title="Search Players" description="" />
       <siteMapNode url ="contact1.aspx" title="Contact Us" description="" />
       <siteMapNode url ="aboutus.aspx" title="About Us" description="" />
-      <siteMapNode url="admin.aspx" title="Admin" description="" />
-      <siteMapNode url="editdelete.aspx" title ="Edit/Delete" description="" />
-      <siteMapNode url ="newplayer.aspx" title="Add Player" description="" />
+      <siteMapNode url="admin/admin.aspx" title="Admin" description="" />
+      <siteMapNode url="admin/editdelete.aspx" title ="Edit/Delete" description="" />
+      <siteMapNode url ="admin/newplayer.aspx" title="Add Player" description="" />
      </siteMapNode>
   
 </siteMap>
